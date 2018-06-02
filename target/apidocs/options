@@ -1,0 +1,22 @@
+-classpath
+'/root/.m2/repository/javax/mail/mail/1.4/mail-1.4.jar:/root/.m2/repository/log4j/log4j/1.2.15/log4j-1.2.15.jar:/root/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/root/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar'
+-encoding
+'UTF-8'
+-protected
+-sourcepath
+'/home/arnaud/code/jgrapher/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2018. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/home/arnaud/code/jgrapher/target/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'jgrapher 1.0-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'jgrapher 1.0-SNAPSHOT API'

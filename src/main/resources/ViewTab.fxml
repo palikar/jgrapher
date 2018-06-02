@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<?import javafx.scene.canvas.Canvas?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="dev.arnaud.ViewTab"
+            >
+
+  <VBox fx:id="mainVbox" AnchorPane.leftAnchor="5" AnchorPane.topAnchor="5" fillWidth="true" AnchorPane.rightAnchor="5" AnchorPane.bottomAnchor="5">
+
+    <padding>
+      <javafx.geometry.Insets top="5" bottom="5" left="15" right="15"></javafx.geometry.Insets>
+    </padding>
+
+
+    <children>
+        <HBox>
+
+          <children>
+            <Label fx:id="loadingGraphsLabel" text="Loaded graphs"></Label>
+            <Region prefWidth="600"></Region>
+            <Button onAction="#addFile" text="Add"></Button>
+            <Button onAction="#removeAll" text="Remove All"></Button>
+          </children>
+
+        </HBox>
+      <TableView  styleClass="table" editable="false"  fx:id="loadingGraphsTable" prefHeight="200" maxHeight="200">
+        <columns>
+          <TableColumn fx:id="col_name" prefWidth="${loadingGraphsTable.width * 0.7}" text="File" />
+          <TableColumn fx:id="col_reload" prefWidth="${loadingGraphsTable.width * 0.15}" text="Reload" />
+          <TableColumn fx:id="col_remove" prefWidth="${loadingGraphsTable.width * 0.15}" text="Remove" />
+        </columns>
+        </TableView>
+      <Separator></Separator>
+      <HBox>
+        <children>
+          <Label text="Graph Preview"></Label>
+          <Region prefWidth="500"></Region>
+          <Label  text="Renering engine"></Label>
+          <ComboBox>
+          </ComboBox>
+        </children>
+      </HBox>
+      <Canvas fx:id="previewPaneCanvas" width="950" height="500"></Canvas>
+    </children>
+
+  </VBox>
+
+
+
+</AnchorPane>

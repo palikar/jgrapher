@@ -1,0 +1,6 @@
+
+digraph G1{
+        start -> touch_object[label="obj_1_full"];        
+        touch_object -> take_object[label="obj_2_full"];
+        start -> wrong_object[label="obj_3_full"];
+}
